@@ -43,7 +43,13 @@ module.exports = {
             options: {
               plugins: () => [
                 require('autoprefixer')({
-                  browsers: ['last 1 version', 'ie >= 11'],
+                  overrideBrowserslist: [
+                "Android 4.1",
+                "iOS 7.1",
+                "Chrome > 31",
+                "ff > 31",
+                "ie >= 8"
+            ]
                 }),
               ],
             },
